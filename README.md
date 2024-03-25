@@ -68,17 +68,25 @@ As imagens a seguir demonstram as visualizações e análises realizadas atravé
 - **Definição de Arquitetura alinhado ao planejamento estratégico de Governança:** Implementação da arquitetura para atender e atingir da melhor forma a democratização dos dados.
 - **Automatização:** Desenvolvimento de funcionalidades para automação de recomendações de precificação de produtos. Com foco em produtização de dados, e como essas funcionalidades podem voltar para a aplicação como forma de assegurar a eficácia de novas regras de negócio.
 
-# Segundo Entregável: ...
+# Segundo Entregável: 
 
+Foi feito upload do código Python: json_file.py
 
+Como resultado da execução deste programa, temos 3 arquivos CSV para demonstrar os datasets finais:
+- expanded_items.csv
+- general_info.csv
+- items_details.csv
 
 ## Terceiro Entregável: Arquiteturas Recomendadas
 
-São sugeridas arquiteturas de dados em nuvem, tanto para Azure quanto para AWS, focando em serviços que atendam às necessidades de:
+Sugestão de arquitetura de Big Data em AWS, focando em serviços que atendam às necessidades de:
 
-- **Extração e Ingestão de Dados:** Tecnologias como Azure Data Factory ou AWS Glue.
-- **Transformação e Processamento:** Utilização de Azure Databricks ou AWS EMR.
-- **Armazenamento e Análise:** Aplicação de Azure Synapse ou AWS Redshift.
+- **Extração e Ingestão de Dados:** Tecnologias como AWS Glue.
+- **Transformação e Processamento:** Utilização de Glue ou AWS EMR.
+- **Armazenamento e Análise:** Utilização de Athena e AWS Redshift.
+- **Gestão de Dados:** Catálogo de dados, Gestão de acesso e permissões.
+
+![aws_big_data_architecture](https://github.com/mmiloni/biops_project/assets/25778957/14263558-c2cb-463d-ba1a-beec9a1d21d8)
 
 A integração desses serviços proporcionará uma solução escalável e com governança incorporada, pronta para ambientes de produção de alta demanda.
 
