@@ -11,7 +11,7 @@ O desafio consiste em integrar dados de uma grande indústria norte-americana, a
 
 ## Solução Proposta
 
-A aplicação desenvolvida busca garantir a integridade e a escalabilidade dos dados, com uma abordagem que visa estruturar uma lakehouse no Snowflake, proporcionando uma camada de consumo adequada para análises avançadas e insights de negócios.
+A aplicação desenvolvida busca garantir a integridade e fácil manipulação dos dados, com uma abordagem que visa estruturar uma lakehouse no Snowflake, proporcionando uma camada de consumo adequada para análises avançadas e insights de negócios.
 
 ### Estrutura do Projeto no Snowflake
 
@@ -92,4 +92,19 @@ A integração desses serviços proporcionará uma solução escalável e com go
 
 ## Conclusão
 
-Este projeto reflete um exercício prático e estratégico em engenharia de analytics. Ele demonstra habilidades de data wrangling, validação e governança de dados, além de mostrar
+Avaliação final:
+Quanto ao primeiro entregável, diversas hipóteses foram validadas que, em cenário de vida real, poderiam ser discutidas com especialistas do negócio e os donos dos dados. Todas as renderizações no Streamlit tem como propósito levantar uma possível discussão ou evidenciar um tratamento necessário do dado que requer uma validação.
+
+Quanto ao segundo entregável, ele é bem direto ao ponto e com o entregável que pode ser visualizado, por isso a demnonstração do código e os datasets que ele gera.
+
+O terceiro entregável é o mais subjetivo, parti do princípio de que se tratava de um projeto de Big Data e, mesmo assim, ainda trouxe mais de um caminho possível na arquitetura. destacando as Etapas:
+- Ingestão de dados
+- Tratamento, transformação e movimentação de dados
+- Processamento de dados
+- Camadas de disponibilidade e consumo de dados.
+
+Se tivesse mais tempo, o que você faria para melhorar a sua solução?
+
+Como mencionei, em um cenário da vida real temos diversas ações que acontecem entre ser apresenbtado com um cenário e a solução, exemplos:
+- Entregável 1: esta não me parece a modelagem original, eu esperaria uma separação enbtre as informações de transação, cliente, endereço, produtos, precificação, etc. Tudo estava quase que totalmente consolidado em uma planilha, obviamente eu gostaria de entender qual a origem desses dados, e sugerir uma arquitetura em cima das origens reais. Além disso, há diversas discussões sobre o porquê o dataset estar assim, é possível imaginar que o dataset está incompleto (acredito que parte do teste tem essa intenção), não temos dados do preço de cada produto e o custo de produção dele, muitas coisas temos que deduzir para aplicar uma solução ao teste, enquanto que na vida real eu daria diversos passos para trás a fim de clarificar todas essas questões antes.
+- No terceiro entregável, muitas dessas questões também se aplicam. O único dataset a ser carregado será das notas fiscais? Obviamente em um projeto isso dificilmente aconteceria, estaríamos falando de todo um sistema de origem. sistema do qual não temos informações sobre volumetria, quantidade de integrações a serem feitas (pipelines), quantidade de consumidores, finalidade do proejto. Enfim, diversas questões que em um cenário real teríamos espeço para questionar e poder precisar o desenho da solução. É comum quando estamos na posição de quem faz o desenho da solução sermos questionados de qual a melhor solução possível, muitas vezes a melhor resposta é "depende", pois temos várias questões em aberto aqui, por isso preferi trazer um desenho mais abrangente e trazer minha recomendações para um cenário que se trata de Big Data e deve ser uma adoção massiva dentro da empresa.
